@@ -17,6 +17,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    NSString *str = @"abcdefg";
+    //这里通过runtime拦截崩溃
+    NSString *subStr = [str substringToIndex:100];
+    NSLog(@"subStr:%@", subStr);
+    
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
